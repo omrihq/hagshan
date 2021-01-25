@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-image: url("assets/zelscoot.jpg");
+  background-repeat: repeat;
+  background-size: 100px;
+  text-align: center;
+}
+
+#text {
+  background: rgba(204, 204, 204, 0.5);
+}
+
+p, h1, li, h2, h3, #contact {
+  font-family: verdana;
+  font-size: 30px;
+  font-style: bold;
+  color: black;
+  text-shadow: 1px 0 0 white, 0 -1px 0 white, 0 1px 0 white, -1px 0 0 white;
+}
+
+img {
+  align-items: center;
+}
+
+</style>
+<h1>Who?</h1>
+</head>
+<body>
+  <p id="text">Zel the shell with shoes on, with pants on, ze blantz on, zel pants, no shoes no pants, no service? no problem, just shell, zel shan, shoshana, zelonias shank, yonashan, shonayan, soy sauce yawn, shaniah twain, shariah law, zelink, zelnak, zelsack, zelnik, kinlez, Stanley Yelnats, Stanley Yelnats</p>
+  <h1 id="text" style="font-size: 40px">Yonatan Zelnik</h1>
+  <div id="text">
+    <h1>Frequent FAQs</h1>
+    <ul style="display: inline-block; text-align: left">
+      <li>
+        Q: How long have you known each other?
+      </li>
+      <li>
+        <a target="_blank" href="https://www.youtube.com/watch?t=17&v=iqjMKL2RYWo&feature=youtu.be">A: The whole time</a>
+      </li>
+      <li>
+        Q: How can I help?
+      </li>
+      <li>
+        <a target="_blank" href="https://www.gofundme.com/f/panda-express-returns">A: Donate here</a>
+      </li>
+      <li>
+        Q: What's in the box?
+      </li>
+      <li>
+        <a target="_blank" href="https://vimeo.com/504282332">A: Find out</a>
+      </li>
+    </ul>
+  </div>
+  <h3 id="text"> Friendly reminder, it's been <p id="seconds">0 seconds</p> since you <a target="_blank" href="https://www.youtube.com/watch?v=HIrKSqb4H4A">got got</a></h3>
+  <script type="text/javascript">
+      var secondsLabel = document.getElementById("seconds");
+      var totalSeconds = 0;
+      setInterval(setTime, 1000);
+
+      function setTime()
+      {
+          ++totalSeconds;
+          secondsLabel.innerHTML = totalSeconds + " seconds";
+      }
+  </script>
+
+  <div id="text">
+    <p>The following is for zelnik's eyes only: please enter a password</p>
+    <p>The following pics describe the password</p>
+    <div>
+      <img src="assets/meandzel2.jpg" alt="The brotherz" width="200">
+      <img src="assets/meandzel.jpg" alt="the babies" width="538">
+    </div>
+    <p style="font-size:16px">Psst, it's your gmail password</p>
+    <input type="text" id="myText" placeholder="password...">
+    <button onclick="reveal()">Reveal</button>
+    <p id="forzelnik"></p>
+  </div>
+  <script type="text/javascript">
+    var forzelnik = document.getElementById("forzelnik");
+
+    function reveal()
+    {
+        var password = document.getElementById("myText").value;
+        if (password === "babybrotherz") {
+          forzelnik.innerHTML = "Dear Zelnik...";
+        } else {
+          forzelnik.innerHTML = "Nice try dingus";
+        }
+    }
+  </script>
+
+  <a id="contact" href="facetime:4088387889" style="font-size:16px">Contact Us?</a>
+</body>
+</html>
+
+
